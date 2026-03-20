@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Biotechture | Genomics Infrastructure</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  margin: 0;
+  background: #f8fafc;
+  color: #1a1a1a;
+}
+
+/* HERO */
+
+.header {
+  background: linear-gradient(135deg, #022c22, #064e3b);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 0;
+}
+
+/* SECTION TITLE */
+
+.section-title {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+/* CARD GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* CARD */
+
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* FULL WIDTH CARD */
+
+.full-card {
+  margin-bottom: 25px;
+}
+
+/* BUTTONS */
+
+.button-green {
+  display: inline-block;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #065f46, #047857);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.button-green:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(4, 120, 87, 0.3);
+}
+
+.button-outline {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid #065f46;
+  color: #065f46;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+/* CTA CARD */
+
+.cta-card {
+  text-align: center;
+  background: linear-gradient(180deg, #ecfdf5, #f0fdf4);
+  border: 1px solid #d1fae5;
+}
+
+/* IMAGE */
+
+.architecture-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="header">
+  <h1>Biotechture</h1>
+  <p>Genomics Infrastructure for Reproducible Research, AI, and Precision Therapeutics</p>
+
+  <a href="jupyterhub-platform.html" class="button-green">Explore Platform</a>
+  <a href="#packages" class="button-outline">View Deployment Options</a>
+</div>
+
+<!-- CORE OFFERING -->
+
+<div class="container">
+
+<h2 class="section-title">Core Infrastructure</h2>
+
+<div class="card full-card">
+  <h3>Managed Genomics Compute Environments</h3>
+  <p>
+    Deploy JupyterHub-based environments with integrated CWL and Nextflow pipelines, 
+    containerized workflows, and scalable cloud-native infrastructure.
+  </p>
+
+  <p>
+    Built for reproducibility, collaboration, and production-grade bioinformatics execution.
+  </p>
+
+  <a href="jupyterhub-platform.html" class="button-green">
+    Explore JupyterHub Platform
+  </a>
+</div>
+
+<!-- PACKAGES -->
+
+<h2 id="packages" class="section-title">Deployment Packages</h2>
+
+<div class="grid">
+
+<div class="card">
+  <h3>Starter Lab Stack</h3>
+  <p>For small research teams and early-stage labs.</p>
+  <p>• Managed JupyterHub</p>
+  <p>• Pre-configured ML notebooks</p>
+  <p>• CWL / Nextflow integration</p>
+</div>
+
+<div class="card">
+  <h3>Production Platform</h3>
+  <p>For scaling genomics workflows.</p>
+  <p>• Kubernetes deployment</p>
+  <p>• Workflow orchestration</p>
+  <p>• Monitoring + logging</p>
+</div>
+
+<div class="card">
+  <h3>Enterprise Deployment</h3>
+  <p>For pharma and regulated environments.</p>
+  <p>• On-prem / hybrid cloud</p>
+  <p>• CI/CD pipelines</p>
+  <p>• Security + compliance</p>
+</div>
+
+<div class="card">
+  <h3>Consulting</h3>
+  <p>Reproducible workflow engineering.</p>
+  <p>• Pipeline development</p>
+  <p>• Optimization</p>
+  <p>• Training</p>
+</div>
+
+</div>
+
+<!-- ARCHITECTURE -->
+
+<h2 class="section-title">Platform Architecture</h2>
+
+<div class="card full-card" style="text-align:center;">
+
+<a href="images/biotechture-genomics-platform-architecture.png" target="_blank">
+  <img src="images/biotechture-genomics-platform-architecture.png" class="architecture-image">
+</a>
+
+<p style="font-size:14px; color:#555;">
+CWL/Nextflow pipelines orchestrated via Kubernetes with AI-driven analytics layers.
+</p>
+
+</div>
+
+<!-- FINAL CTA -->
+
+<div class="card cta-card">
+  <h2>Start a Deployment</h2>
+  <p>Deploy your genomics infrastructure in days, not months.</p>
+
+  <a href="https://calendly.com/YOUR-LINK-HERE" class="button-green">
+    Schedule a Call
+  </a>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+© 2026 Biotechture | Genomics Infrastructure Platforms
+</div>
+
+</body>
+</html>
