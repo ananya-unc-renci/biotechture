@@ -40,25 +40,59 @@ body {font-family: Arial, sans-serif; margin:0; background:#f5f7fa; color:#1a1a1
 </div>
 
 <div class="container">
-
+<h2 class="section-title">Core Offering</h2>
 <h2 class="section-title"><a href="jupyterhub-platform.html" class="button">
   Explore JupyterHub Platform
 </a></h2>
   
 <h2 class="section-title">Deployment Packages</h2>
 
+<div class="card">
+  <h3>Starter Lab Stack</h3>
+  <p>Ideal for small research teams getting started with reproducible genomics workflows.</p>
+  <p><strong>Includes:</strong></p>
+  <p>• Managed JupyterHub (multi-user)</p>
+  <p>• Pre-configured Python/R + ML environment</p>
+  <p>• CWL or Nextflow workflow integration</p>
+  <p>• Docker-based execution</p>
+  <p>• Basic cloud deployment (GCP/AWS)</p>
+  <p><strong>Best For:</strong> Academic labs, early-stage biotech teams</p>
+</div>
+
+<div class="card">
+  <h3>Production Genomics Platform</h3>
+  <p>Scalable infrastructure for teams running high-throughput NGS workflows.</p>
+  <p><strong>Includes:</strong></p>
+  <p>• Kubernetes-based JupyterHub deployment</p>
+  <p>• CWL + Nextflow workflow orchestration</p>
+  <p>• Scalable compute + storage architecture</p>
+  <p>• Workflow monitoring and logging</p>
+  <p>• Secure multi-user access control</p>
+  <p><strong>Best For:</strong> Biotech, pharma, genomics startups</p>
+</div>
+
+<div class="card">
+  <h3>Enterprise / Custom Deployment</h3>
+  <p>Tailored infrastructure for regulated, large-scale environments.</p>
+  <p><strong>Includes:</strong></p>
+  <p>• On-prem or hybrid cloud deployment</p>
+  <p>• Custom workflow pipelines (CWL/Nextflow)</p>
+  <p>• CI/CD for bioinformatics workflows</p>
+  <p>• Security, compliance, and audit readiness</p>
+  <p>• Dedicated consulting and support</p>
+  <p><strong>Best For:</strong> Pharma, clinical genomics, public health systems</p>
+</div>
+  
 <h2 class="section-title">Architecture Overview</h2>
 
 <div class="card architecture-card">
   <h3 style="text-align:center;">Platform Architecture</h3>
 
-  <a href="images/biotechture-genomics-platform-architecture.png" target="_blank">
     <img 
       src="images/biotechture-genomics-platform-architecture.png"
       alt="Biotechture Genomics Platform Architecture"
       class="architecture-image"
     >
-  </a>
 
   <p class="image-caption">
     CWL/Nextflow-powered pipelines orchestrated via Kubernetes, enabling scalable, reproducible genomics workflows with integrated AI/ML analytics.
